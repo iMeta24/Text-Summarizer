@@ -1,0 +1,10 @@
+# text_summarizer.py
+
+from gensim.summarization import summarize
+
+def summarize_text(text, ratio=0.2):
+    return summarize(text, ratio=ratio)
+
+# Sample usage
+text = """Long text to summarize goes here..."""
+print(summarize_text(text))
